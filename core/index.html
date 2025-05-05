@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Core Responsibilities & Activities</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --accent:  #8BA4D5;      /* KHS blue */
+      --text:    #2B2B2B;
+      --bg:      #FFFFFF;
+      --radius:  6px;
+      --shadow:  0 3px 18px rgba(0,0,0,.05);
+      --heading-font: 'Cormorant Garamond', serif;
+      --body-font:    'Montserrat', sans-serif;
+    }
+
+    /* ---------- Reset / Base ---------- */
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: var(--body-font);
+      line-height: 1.65;
+      font-size: 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ---------- Layout ---------- */
+    .section {
+      max-width: 1000px;
+      margin-inline: auto;
+      padding: 3rem 1.25rem 4rem;
+    }
+
+    /* ---------- Header ---------- */
+    .kicker {
+      font-size: .8rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      color: var(--accent);
+      margin: 0 0 .25rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      font-family: var(--heading-font);
+      font-weight: 700;
+      font-size: clamp(2.2rem, 4vw + .5rem, 3.2rem);
+      line-height: 1.15;
+      margin: 0 0 1.2rem;
+    }
+
+    .intro {
+      margin: 0 0 3rem;
+      max-width: 70ch;
+      font-size: 1.1rem;
+      position: relative;
+    }
+    .intro::first-letter {
+      font-family: var(--heading-font);
+      float: left;
+      font-size: 3.75rem;
+      line-height: .9;
+      padding: .15rem .25rem .15rem 0;
+      color: var(--accent);
+    }
+
+    /* ---------- Responsibilities List ---------- */
+    .list {
+      display: grid;
+      gap: 3rem 3rem;
+      grid-template-columns: 1fr;
+    }
+
+    .item {
+      position: relative;
+      padding-left: 2.4rem;
+    }
+    .item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: .4rem;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--accent);
+      box-shadow: 0 0 0 4px rgba(139,164,213,.15);
+    }
+    .item h2 {
+      margin: 0;
+      font-family: var(--heading-font);
+      font-size: 1.5rem;
+      line-height: 1.25;
+      font-weight: 600;
+    }
+    .item p {
+      margin: .5rem 0 0;
+      font-size: 1.02rem;
+      max-width: 60ch;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (min-width: 780px) {
+      .list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <article class="section">
+    <p class="kicker">Delegation Oversight</p>
+    <h1>Core Responsibilities &amp; Activities</h1>
+    <p class="intro">
+      Day to day, the Delegation Oversight team performs a variety of duties to fulfill our mission. Below you will find some of our core responsibilities and how they are carried out in practice:
+    </p>
+
+    <div class="list">
+      <!-- Performance Monitoring -->
+      <section class="item">
+        <h2>Performance Monitoring</h2>
+        <p>
+          We continually review performance metrics from our delegates to ensure they meet established benchmarks and standards.
+        </p>
+      </section>
+
+      <!-- Routine Communication & Meetings -->
+      <section class="item">
+        <h2>Routine Communication &amp; Meetings</h2>
+        <p>
+          We conduct regular oversight meetings, often called Joint Operations Committees (JOCs), to discuss performance results, address issues, and coordinate improvements with delegates.
+        </p>
+      </section>
+
+      <!-- Audits & Site Visits -->
+      <section class="item">
+        <h2>Audits &amp; Site Visits</h2>
+        <p>
+          Annually, we perform comprehensive audits of each delegate to verify compliance with KHS policies, regulatory standards, staff qualifications, and data‑security practices.
+        </p>
+      </section>
+
+      <!-- Policy Management -->
+      <section class="item">
+        <h2>Policy Management</h2>
+        <p>
+          Our department maintains and updates KHS’s Delegation Oversight policies and procedures. These policies guide how delegates are selected, monitored, and managed to ensure compliance with regulatory and accreditation standards.
+        </p>
+      </section>
+
+      <!-- Interdepartmental Collaboration -->
+      <section class="item">
+        <h2>Interdepartmental Collaboration</h2>
+        <p>
+          We collaborate closely with various KHS departments—including Quality Improvement, Provider Relations, and Compliance—to provide comprehensive oversight and effective responses to any delegate‑related issues, complaints, or questions.
+        </p>
+      </section>
+    </div>
+  </article>
+</body>
+</html>
