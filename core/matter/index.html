@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Why These Partnerships Matter</title>
+  <!-- Google Fonts: Cormorant Garamond + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent:    #957db5;
+      --text:      #2B2B2B;
+      --bg:        #fff;
+      --radius:    8px;
+      --shadow:    0 1px 3px rgba(0,0,0,0.1);
+      --gap-v:     1rem;
+      --gap-h:     0.75rem;
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 2rem;
+      font-family: 'Montserrat', sans‑serif;
+      color: var(--text);
+      display: flex;
+      justify-content: center;
+      background: transparent;
+    }
+
+    .widget {
+      background: var(--bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 600px;
+      width: 100%;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-v);
+    }
+
+    .widget h2 {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.75rem;
+      color: #000;
+    }
+
+    .widget p {
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .features {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-v);
+    }
+
+    .features > li {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--gap-h);
+    }
+
+    .features .bullet {
+      flex-shrink: 0;
+      margin-top: 0.3rem;
+      width: 0.5rem;
+      height: 0.5rem;
+      background: var(--accent);
+      border-radius: 50%;
+    }
+
+    .features strong {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+    }
+
+    /* nested checkbox list */
+    .sublist {
+      list-style: none;
+      margin: var(--gap-v) 0 var(--gap-v) 1.25rem;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .sublist li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+    }
+    .sublist input {
+      accent-color: var(--accent);
+    }
+
+    @media (max-width: 500px) {
+      .features > li {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="widget">
+    <h2>Why These Partnerships Matter</h2>
+    <p>
+      These organizations define expectations, ensure accountability through audits and reports, and protect member well‑being. Their oversight directly supports KHS in providing quality, compliant healthcare services.
+    </p>
+
+    <ul class="features">
+      <li>
+        <div class="bullet"></div>
+        <div>
+          <strong>They set the rules:</strong>
+          CMS, DHCS and DMHC outline what <em>we must</em> do, while NCQA outlines what <em>we should</em> do for best practices.
+        </div>
+      </li>
+      <li>
+        <div class="bullet"></div>
+        <div>
+          <strong>They assess our performance:</strong>
+          Through audits, surveys, or reporting requirements, they validate KHS (and by extension our delegates) is following the rules.
+        </div>
+      </li>
+      <li>
+        <div class="bullet"></div>
+        <div>
+          <strong>They protect our members:</strong>
+          All these bodies focus on member protections. By working with them, we further KHS’ mission to serve our community.
+        </div>
+      </li>
+      <li>
+        <div class="bullet"></div>
+        <div>
+          <strong>They impact our accreditation and contracts:</strong>
+          Good standing with NCQA can:
+          <ul class="sublist">
+            <li><input type="checkbox" disabled> Influence our potential accreditation status.</li>
+            <li><input type="checkbox" disabled> Compliance with DHCS and DMHC keeps our license and contract secure.</li>
+            <li><input type="checkbox" disabled> Compliance with CMS is mandatory for any Medicare line of business.</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+</body>
+</html>
