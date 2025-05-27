@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Delegation Oversight Pillars</title>
+  <!-- Google Fonts: Cormorant Garamond + Montserrat -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --accent:  #8BA4D5;
+      --text:    #2B2B2B;
+      --bg:      #FFFFFF;
+      --radius:  8px;
+      --shadow:  0 1px 3px rgba(0,0,0,0.1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 2rem;
+      background: transparent;
+      color: var(--text);
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      justify-content: center;
+    }
+
+    .widget {
+      max-width: 600px;
+      width: 100%;
+      background: var(--bg);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .widget h2 {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.75rem;
+      color: var(--accent);
+      text-align: center;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+    }
+
+    .item {
+      padding: 0.75rem 0;
+      border-bottom: 1px solid var(--accent);
+      position: relative;
+    }
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    .item-title {
+      margin: 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: 1.2rem;
+      color: var(--text);
+    }
+    .item-title::after {
+      content: '—';
+      position: absolute;
+      right: 0;
+      top: 0;
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 400;
+    }
+
+    .item-desc {
+      margin: 0.5rem 0 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="widget">
+    <h2>Delegation Oversight Pillars</h2>
+
+    <div class="item">
+      <h3 class="item-title">Accountability</h3>
+      <p class="item-desc">
+        Delegation Oversight keeps KHS compliant with CMS, DHCS, DMHC, and NCQA standards.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">Quality &amp; Safety</h3>
+      <p class="item-desc">
+        Rigorous audits and monitoring protect members and elevate care.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">Collaboration</h3>
+      <p class="item-desc">
+        Success hinges on tight teamwork with Compliance, internal SMEs, and our delegates.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">Continuous Improvement</h3>
+      <p class="item-desc">
+        Data-driven reviews &amp; CAPs help partners level‑up service.
+      </p>
+    </div>
+
+    <div class="item">
+      <h3 class="item-title">Community Impact</h3>
+      <p class="item-desc">
+        Every Delegate touchpoint ultimately improves the lives of our members.
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>
